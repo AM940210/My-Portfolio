@@ -11,7 +11,14 @@ const Home: React.FC = () => {
       <p className="text-xl text-gray-600">
         I'm a passionate Frontend Developer with a love for crafting beautiful and functional web experiences. I specialize in creating responsive, dynamic, and user-friendly interfaces.
       </p>
-      
+      <div className="flex space-x-4">
+        <button className="px-6 py-2 mt-4 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition duration-300 cursor-pointer">
+          About Me
+        </button>
+        <button className="px-6 py-2 mt-4 bg-gray-600 text-white rounded-lg shadow-md hover:bg-gray-700 transition duration-300 cursor-pointer">
+          Contact Me
+        </button>
+      </div>
     </div>
   );
 };
