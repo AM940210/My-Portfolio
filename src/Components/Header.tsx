@@ -9,7 +9,7 @@ const Header: React.FC = () => {
           <Link to="/">
             <img
               src="/src/assets/Alogo.jpg"
-              alt="My Portfolio Logo"
+              alt=""
               className="h-12"
             />
           </Link>
