@@ -3,6 +3,14 @@ import React from "react";
 const Contact: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center h-screen text-center bg-gray-50 p-8">
+      <div className="w-full md:w-1/2 mb-8 md:am-0">
+        <h1>Let's talk</h1>
+        <p>I'm currently available to take on new projects, so feel free to send me a message about anyting that you want me to work on. You can contact me anytime.</p>
+        <p><i></i> ahmmoh0210@gmail.com</p>
+        <p><i></i> +46727191174</p>
+        <p><i></i> Sweden, Gotengborg</p>
+      </div>
+      
       <h1 className="text-4xl font-semibold text-gray-800 mb-6">Get in touch</h1>
 
       <form className="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
@@ -42,7 +50,7 @@ const Contact: React.FC = () => {
           ></textarea>
         </div>
 
-        <button
+        <button 
           type="submit"
           className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
           Send Message
