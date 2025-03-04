@@ -19,24 +19,62 @@ const Header: React.FC = () => {
 
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex space-x-6 justify-center flex-grow">
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/education">Education</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li>
+            <Link to="/about" className="hover:text-gray-300 transition duration-200">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/education" className="hover:text-gray-300 transition duration-200">
+              Education
+            </Link>
+          </li>
+          <li>
+            <Link to="/projects" className="hover:text-gray-300 transition duration-200">
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="hover:text-gray-300 transition duration-200">
+              Contact
+            </Link>
+          </li>
         </ul>
 
         {/* Hamburger Icon for Mobile */}
-        <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
-          <i className="fas fa-bars"></i>
+        <button className="md:hidden text-white" 
+        onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen ? "true" : "false"}
+        aria-label="Toggle menu"
+        >
+          <i className="fas fa-bars text-2xl"></i>
         </button>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
-          <ul className="space-y-4 text-center">
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/education">Education</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+        <div
+          className={`md:hidden ${isOpen ? "block" : "hidden"} bg-blue-700 rounded-b-lg mt-4 p-4 absolute top-16 left-0 right-0 z-10`}
+        >
+          <ul className="space-y-4 text-center text-white">
+            <li>
+              <Link to="/about" onClick={() => setIsOpen(false)}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/education" onClick={() => setIsOpen(false)}>
+                Education
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects" onClick={() => setIsOpen(false)}>
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={() => setIsOpen(false)}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
 
