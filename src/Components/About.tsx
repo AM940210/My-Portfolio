@@ -2,8 +2,9 @@ import React from "react";
 
 const About: React.FC = () => {
   return (
-    <div className="flex h-screen text-center p-8 font-sans bg-gray-50">
-      <div className="am:w-1/2 pr-8">
+    <div className="flex flex-col md:flex-row h-screen text-center p-8 font-sans bg-gray-50">
+      {/* Image Section */}
+      <div className="w-full md:w-1/2 pr-8 mb-8 md:mb-0">
         <img
           src="/src/assets/Alogo.jpg"
           alt="About Me"
@@ -11,8 +12,9 @@ const About: React.FC = () => {
         />
       </div>
 
-      <div className="w-full md:w-1/2 text-center md:text-left">
-        <h1 className="text-4xl font-bold text-gray-900">About Me!</h1>
+      {/* Skills Section */}
+      <div className="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center">
+        <h1 className="text-4xl font-bold mt-2 text-gray-900">About Me!</h1>
         <p className="mt-4 text-lg text-gray-700">
           Ahmad Mohammadi is a passionate and dedicated frontend developer who
           has recently embarked on an exciting journey in the world of web
@@ -25,9 +27,11 @@ const About: React.FC = () => {
           innovation and collaboration.
         </p>
 
+        {/* Skills Bar */}
         <div className="mt-8">
           <h2 className="text-2xl font-semibold text-gray-800">Skills</h2>
-          <div className="mt-4">
+          <div className="mt-4 space-y-4">
+            {/* HTML Skill Bar */}
             <div className="mb-4">
               <label className="text-sm text-gray-600">HTML</label>
               <div className="w-full bg-gray-200 rounded-full h-2.5">
@@ -37,6 +41,7 @@ const About: React.FC = () => {
                 ></div>
               </div>
             </div>
+            {/* CSS Skill Bar */}
             <div className="mb-4">
               <label className="text-sm text-gray-600">CSS</label>
               <div className="w-full bg-gray-200 rounded-full h-2.5">
@@ -46,6 +51,7 @@ const About: React.FC = () => {
                 ></div>
               </div>
             </div>
+            {/* JavaScript Skill Bar */}
             <div className="mb-4">
               <label className="text-sm text-gray-600">JavaScript</label>
               <div className="w-full bg-gray-200 rounded-full h-2.5">
@@ -55,6 +61,7 @@ const About: React.FC = () => {
                 ></div>
               </div>
             </div>
+            {/* React Skill Bar */}
             <div className="mb-4">
               <label className="text-sm text-gray-600">React</label>
               <div className="w-full bg-gray-200 rounded-full h-2.5">
