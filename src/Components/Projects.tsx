@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Define the type for a project
 interface Project {
@@ -55,12 +55,12 @@ const addProject = () => {
           <p>No projects available.</p>
         ) : (
           <ul>
-            {projects.map((project) => {
+            {projects.map((project) => (
               <li key={project.id}>
                 <strong>{project.title}</strong>
                 <p>{project.description}</p>
               </li>
-            })}
+            ))}
           </ul>
         )}
       </div>
