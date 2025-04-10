@@ -21,13 +21,27 @@ const Home: React.FC = () => {
       {/* Conditional Rendering Based on Current Section */}
       {currentSection === 'about' ? (
         <p className="text-xl text-gray-600 mx-6">
-          ? "I'm a passionate Frontend Developer with a love for crafting beautiful and functional web experiences. 
+          I'm a passionate Frontend Developer with a love for crafting beautiful and functional web experiences. 
           I specialize in creating responsive, dynamic, and user-friendly interfaces."
         </p>
       ) : (
-        <p className="text-xl text-gray-600 mx-6">
-          You can reach out to me for any frontend development work, projeckts, or collaboration!
-        </p>
+        <>
+          <p className="text-xl text-gray-600 mx-6">
+            Feel free to reach out to me for any frontend development work, projeckts, or collaboration!
+          </p>
+          <p className="text-lg text-gray-700 mt-2">
+            <strong>Email:</strong>{""}
+            <a href="mailto:ahmmoh0210@gmail.com" className="hover:underline">
+              ahmmoh0210@gmail.com
+            </a>
+          </p>
+          <p className="text-lg text-gray-700 mt-2">
+            <strong>Phone:</strong>{""}
+            <a href="tel:+727191174" className="hover:underline">
+              +46 72 71 91 174
+            </a>
+          </p>
+        </>
       )}
       
       <div className="flex space-x-4">
