@@ -11,7 +11,7 @@ const Header: React.FC = () => {
           <Link to="/">
             <img
               src="/src/assets/Alogo.jpg"
-              alt=""
+              alt="Ahmad Mohammadi"
               className="h-12"
             />
           </Link>

@@ -3,7 +3,7 @@ import React from "react";
 const Contact: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center h-screen text-center bg-gray-50 p-8">
-      <div className="w-full md:w-1/2 mb-8 md:am-0 mr-16">
+      <div className="w-full md:w-1/2 mb-8 md:mb-0 mr-16">
         <h1 className="text-4xl font-semibold text-gray-800 mb-8">Let's talk</h1>
         <p className="text-lg text-gray-600 mb-8">I'm currently available to take on new projects, so feel free to send me a message about anyting that you want me to work on. You can contact me anytime.</p>
         <p className="text-lg text-gray-600 mb-8">
